@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 MAINTAINER Colin Alston <colin@praekelt.com>
-RUN apt-get update && apt-get -y --force-yes install libjpeg-dev zlib1g-dev libxslt1-dev libpq-dev nginx redis-server supervisor python-dev python-pip
+RUN apt-get update && apt-get -y --force-yes install libjpeg-dev zlib1g-dev libxslt1-dev libpq-dev nginx redis-server supervisor python-dev python-pip git
 RUN apt-get -y install libffi-dev gettext
 
 RUN pip install --upgrade pip
@@ -18,7 +18,7 @@ ADD setup.py /deploy/
 ADD README.rst /deploy/
 ADD VERSION /deploy/
 
-RUN pip install -e .
+RUN pip install -r requirements.txt
 
 RUN mkdir -p /etc/supervisor/conf.d/
 RUN mkdir -p /var/log/supervisor
