@@ -1,4 +1,4 @@
--e git+https://github.com/praekelt/molo.git@230c8ead2b144b11c852352c1d7006fef0e214ec#egg=molo.core
+-e git+https://github.com/praekelt/molo.git@e2d509d033e1f63a7924a0f2f5767a10a6eafe3e#egg=molo.core
 molo.profiles==3.0.0
 molo.commenting==2.0.1
 molo.yourwords==2.1.0
