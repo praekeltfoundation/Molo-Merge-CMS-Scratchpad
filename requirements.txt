@@ -1,10 +1,9 @@
--e git+https://github.com/praekelt/molo.git@d9cfd703e422e04106151985be304533ca86d3ff#egg=molo.core
-molo.profiles==3.0.0
-molo.commenting==2.0.1
+molo.core==5.0.4b1
+molo.commenting==3.0.2b1
 molo.yourwords==2.1.0
 molo.servicedirectory==2.1.2
 molo.polls==3.1.0
-molo.surveys==2.1.0
+molo.surveys==3.0.0b1
 celery<4.0
 gunicorn
 psycopg2
